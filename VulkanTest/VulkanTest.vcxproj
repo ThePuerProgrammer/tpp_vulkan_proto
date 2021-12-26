@@ -25,7 +25,7 @@
   <ItemGroup>
     <ClInclude Include="GlobalApplicationConstants.h" />
     <ClInclude Include="HelloTriangleApplication.h" />
-    <ClInclude Include="QueueFamilyIndicies.h" />
+    <ClInclude Include="QueueFamilyIndices.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
