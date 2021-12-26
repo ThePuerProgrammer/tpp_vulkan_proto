@@ -3,6 +3,8 @@
 
 HelloTriangleApplication::HelloTriangleApplication()
 {
+    std::cout << "HelloTriangleApplication() called\n";
+
     glfwExtensionCount = 0;
     requiredGLFWExtensionsEstablished = false;
 
@@ -20,11 +22,8 @@ HelloTriangleApplication::~HelloTriangleApplication()
     }
 
     vkDestroyDevice(logicalDevice, nullptr);
-
     vkDestroyInstance(instance, nullptr);
-
     glfwDestroyWindow(window);
-
     glfwTerminate();
 
     std::cout << "~HelloTriangleApplication() called\n";
@@ -54,6 +53,7 @@ void HelloTriangleApplication::initVulkan()
     setupDebugMessenger();
     selectPhysicalDevice();
     createLogicalDevice();
+    getDeviceQueue();
 }
 
 void HelloTriangleApplication::createVkInstance()
@@ -411,6 +411,12 @@ void HelloTriangleApplication::createLogicalDevice()
     {
         throw std::runtime_error("Failed to create logical device");
     }
+
+}
+
+void HelloTriangleApplication::getDeviceQueue()
+{
+    vkGetDeviceQueue(logicalDevice, queueFamilyIndicies.graphicsFamily.value(), 0, &graphicsQueue);
 }
 
 void HelloTriangleApplication::mainLoop()

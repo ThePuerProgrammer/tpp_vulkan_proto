@@ -115,6 +115,8 @@ private:
 
     void createLogicalDevice();
 
+    void getDeviceQueue();
+
     void mainLoop();
     //------------------------------------------------------------------------//
 };
