@@ -29,7 +29,7 @@
     <ClInclude Include="GlobalApplicationConstants.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="QueueFamilyIndicies.h">
+    <ClInclude Include="QueueFamilyIndices.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
