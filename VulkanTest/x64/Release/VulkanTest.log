@@ -1,8 +1,0 @@
-﻿  HelloTriangleApplication.cpp
-C:\Users\Wayne\Documents\VulkanProjects\VulkanTest\VulkanTest\HelloTriangleApplication.cpp(79,23): warning C4018: '<': signed/unsigned mismatch
-  main.cpp
-  Generating code
-  Previous IPDB not found, fall back to full compilation.
-  All 86 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
-  Finished generating code
-  VulkanTest.vcxproj -> C:\Users\Wayne\Documents\VulkanProjects\VulkanTest\x64\Release\VulkanTest.exe
