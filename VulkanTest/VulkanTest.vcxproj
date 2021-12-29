@@ -27,6 +27,11 @@
     <ClInclude Include="HelloTriangleApplication.h" />
     <ClInclude Include="QueueFamilyIndices.h" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="shaders\compile.bat" />
+    <None Include="Shaders\shader.frag" />
+    <None Include="Shaders\shader.vert" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
